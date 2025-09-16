@@ -1,4 +1,4 @@
 package TestAPackage;
 
-public class SubClass2 {
+public class Class1 {
 }
