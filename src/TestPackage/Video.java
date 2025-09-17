@@ -2,11 +2,17 @@ package TestPackage;
 
 public class Video extends LoanItem{
 
+    //konstruktør
     public Video(String type, String name) {
         super(type, name);
         this.type = type;
         this.name = name;
 
+    }
+    //konstruktør
+    public Video(String name){
+        super(name);
+        this.type = "Video";
     }
     //getter
     public String getType() {
@@ -31,5 +37,5 @@ public class Video extends LoanItem{
     public String toString() {
         return "Video{" + "type=" + type + ", name=" + name + '}';
     }
-    public void
+
 }
