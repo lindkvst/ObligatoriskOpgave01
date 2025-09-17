@@ -35,11 +35,15 @@ public class TestClass {
         for (int i = 0; i < loanCollection.length; i++) {
             System.out.println(loanCollection[i]);
         }
+
+        /*
         for (int i = 0; i < loanCollection[i]) {
             loanCollection[i].printList();
         }
-        System.out.println("LIST OF LOAN ITEMS:");
-        System.out.println("ID\tTYPE\TITLE");
-
+        System.out.println("LIST\tOF\tLOAN\tITEMS:");
+        System.out.println("ID\tTYPE\tTITLE");
+        System.out.println(loanCollection[i] + 1 "\t" );
+*/
 
     }
+}
