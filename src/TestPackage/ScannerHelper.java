@@ -34,7 +34,7 @@ public class ScannerHelper {
                 } else if (numOfLoans == 0) {
                     System.out.println("Are you sure you don't have any loans to register?");
                 } else if (numOfLoans > maxLoans) {
-                    System.out.println("That's to much to handle for us. We max process " + maxLoans + " in one go.");
+                    System.out.println("That's to much to handle for us. We can max process " + maxLoans + " in one go.");
                 } else {
                     if (numOfLoans == 1) {
                         System.out.println("Looks like we're having an easy day today. Let's register your loan");
