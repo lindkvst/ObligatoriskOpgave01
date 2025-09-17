@@ -2,7 +2,10 @@ package TestPackage;
 
 public class TestClass {
     public static void main(String[] args) {
+        createLoans();
+    }
 
+    static void createLoans() {
         // Lokale variabler.
         char loanType;
 
