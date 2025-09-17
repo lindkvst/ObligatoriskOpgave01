@@ -54,7 +54,7 @@ public class ScannerHelper {
 
         while (!correctAnswer) {
             System.out.print("Please input the loan type (B for Book, V for Video: ");
-            loanType  = sc.nextLine();
+            loanType  = sc.next().charAt(0);
 
             if (loanType == 'b' || loanType == 'B' ||
                 loanType == 'v' || loanType == 'V') {
