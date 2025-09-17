@@ -8,6 +8,9 @@ public class LoanItem {
         this.type = type;
         this.name = name;
     }
+    public LoanItem(String name){
+        this.name = name;
+    }
 
     @Override
     public String toString() {
