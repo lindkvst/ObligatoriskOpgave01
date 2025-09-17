@@ -34,6 +34,7 @@ public class TestClass {
         }
 
         // Loan registration.
+        System.out.println("\n"");
         for (int i = 0; i < loanCollection.length; i++) {
             System.out.println(loanCollection[i]);
         }

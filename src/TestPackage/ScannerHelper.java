@@ -27,7 +27,7 @@ public class ScannerHelper {
 
         while (!numCorrect) {
 
-            System.out.print("How many loans do you want to register today?");
+            System.out.print("How many loans do you want to register today? ");
             //nedenstående er input validering, der sikrer at vi registrerer en int inden for et
             //accepteret range, som ikke er et negativt tal.
             if (sc.hasNextInt()) { //scanner
