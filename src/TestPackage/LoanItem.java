@@ -30,4 +30,7 @@ public class LoanItem {
     public void setName(String name){
         this.name = name;
     }
+    public void printList(){
+        System.out.print(type + "\t" + name);
+    }
 }
