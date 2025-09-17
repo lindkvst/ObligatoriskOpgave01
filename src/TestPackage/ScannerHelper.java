@@ -1,10 +1,13 @@
 package TestPackage;
 
+//importerer Scanner library
 import java.util.Scanner;
+
 
 public class ScannerHelper {
     private Scanner sc;
 
+    //Konstruktør til initialisering af scanneren
     public ScannerHelper() {
         this.sc = new Scanner(System.in);
     }
@@ -15,6 +18,8 @@ public class ScannerHelper {
         System.out.println("Let's get ready to register some loans! \n");
     }
 
+    //Metode til input validering af antal lån. Man kan kun indtaste en integer, som er et positivt tal
+    //mellem 0 og 10
     public int  numOfLoans() {
         boolean numCorrect = false;
         int numOfLoans = 0;
@@ -51,6 +56,7 @@ public class ScannerHelper {
         return numOfLoans; // antal lån returneres
     }
 
+    //metode til input validering af type, kan kun være b, B, v eller V.
     public char askType() {
         char loanType = '0';
         boolean correctAnswer = false;
@@ -71,6 +77,7 @@ public class ScannerHelper {
         return loanType;
     }
 
+    //metode til at indtaste loan name
     public String askName() {
         System.out.print("Please input the loan title: ");
         String loanName = sc.nextLine();
