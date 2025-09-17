@@ -1,39 +1,45 @@
 package TestPackage;
 
 public class TestClass {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        String loanType;
+        char loanType;
 
         String loanName;
 
         ScannerHelper Sc = new ScannerHelper();
         Sc.welcomeMessage();
 
+        int numOfLoans;
+        numOfLoans = Sc.numOfLoans();
 
-        int loanCollection = Sc.numOfLoans();
 
-        LoanItem[] loanCollection = new LoanItem[];
+        LoanItem[] loanCollection = new LoanItem[numOfLoans];
 
-        for (int i = 0); i < loanCollection.length; i++){
+        for (int i = 0; i < loanCollection.length; i++) {
             int regCount = i + 1;
             System.out.println("\nRegister loan: " + regCount);
             loanType = Sc.askType();
             loanName = Sc.askName();
 
-            if (loanType.equalsIgnoreCase("video")) ;
-            //video
-            loanCollection[i] = new Video(loanName);
-
-        }else if (loanType.equalsIgnoreCase("book")){
-         //book
+            if (loanType == 'v' || loanType == 'V') {
+                //video
+                loanCollection[i] = new Video(loanName);
+            } else if (loanType == 'b' || loanType == 'B') {
+                //book
+                loanCollection[i] = new Book(loanName);
+            }
         }
+
+        // Loan registration
+        for (int i = 0; i < loanCollection.length; i++) {
+            System.out.println(loanCollection[i]);
+        }
+        for (int i = 0; i < loanCollection[i]) {
+            loanCollection[i].printList();
+        }
+        System.out.println("LIST OF LOAN ITEMS:");
+        System.out.println("ID\tTYPE\TITLE");
+
+
     }
-    // Loan registration
-    for (int i = 0; i < loanCollection.lenght; i++){
-        System.out.println(loanCollection[i]);
-    }
-
-
-
-}
