@@ -18,6 +18,7 @@ public class ScannerHelper {
     public int  numOfLoans() {
         boolean numCorrect = false;
         int numOfLoans = 0;
+        int maxLoans = 10;
 
         while (!numCorrect) {
 
@@ -27,7 +28,23 @@ public class ScannerHelper {
             if (sc.hasNextInt()) { //scanner
                 numOfLoans = sc.nextInt();
                 sc.nextLine(); // rydder enter fra input bufferen, da dette kan give problemer
+
+                if (numOfLoans < 0) {
+                    System.out.println("You have entered a negative number. Try again");
+                } else if (numOfLoans == 0) {
+                    System.out.println("Are you sure you don't have any loans to register?");
+                } else if (numOfLoans > maxLoans) {
+                    System.out.println("That's to much to handle for us. We max process " + maxLoans + " in one go.");
+                } else {
+                    if (numOfLoans == 1) {
+                        System.out.println("Looks like we're having an easy day today. Let's register your loan");
+                    } else {
+                        System.out.println("Let's register your " + numOfLoans + " loans.\n");
+                    }
+                    numCorrect = true; // vi har et gyldigt input, så vi bryder ud af loopet.
+                }
             }
         }
+        return numOfLoans; // antal lån returneres
     }
 }
