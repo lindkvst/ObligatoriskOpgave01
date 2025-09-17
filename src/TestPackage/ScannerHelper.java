@@ -53,8 +53,9 @@ public class ScannerHelper {
         boolean correctAnswer = false;
 
         while (!correctAnswer) {
-            System.out.print("Please input the loan type (B for Book, V for Video: ");
+            System.out.print("Please input the loan type (B for Book, V for Video): ");
             loanType  = sc.next().charAt(0);
+            sc.nextLine(); //rydder input bufferen
 
             if (loanType == 'b' || loanType == 'B' ||
                 loanType == 'v' || loanType == 'V') {
