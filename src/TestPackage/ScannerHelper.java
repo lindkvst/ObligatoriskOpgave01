@@ -47,4 +47,29 @@ public class ScannerHelper {
         }
         return numOfLoans; // antal lån returneres
     }
+
+    public char askType() {
+        char loanType = '0';
+        boolean correctAnswer = false;
+
+        while (!correctAnswer) {
+            System.out.print("Please input the loan type (B for Book, V for Video: ");
+            loanType  = sc.nextLine();
+
+            if (loanType == 'b' || loanType == 'B' ||
+                loanType == 'v' || loanType == 'V') {
+                correctAnswer = true;
+                return loanType;
+            } else {
+                System.out.println("Sorry, I didn't quite get that. Please enter a valid type.");
+            }
+        }
+    }
+
+    public String askName() {
+        System.out.print("Please input the loan title: ");
+        String loanName = sc.nextLine();
+
+        return loanName;
+    }
 }
