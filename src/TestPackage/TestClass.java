@@ -3,6 +3,7 @@ package TestPackage;
 public class TestClass {
     public static void main(String[] args) {
 
+        // Lokale variabler.
         char loanType;
 
         String loanName;
@@ -16,6 +17,7 @@ public class TestClass {
 
         LoanItem[] loanCollection = new LoanItem[numOfLoans];
 
+        // Opdatere array- loanCollection ved brug af forLoop.
         for (int i = 0; i < loanCollection.length; i++) {
             int regCount = i + 1;
             System.out.println("\nRegister loan: " + regCount);
@@ -31,11 +33,11 @@ public class TestClass {
             }
         }
 
-        // Loan registration
+        // Loan registration.
         for (int i = 0; i < loanCollection.length; i++) {
             System.out.println(loanCollection[i]);
         }
-        //Vi printer et output
+        // Vi printer et output
         System.out.println("\n\nLIST OF LOAN ITEMS:");
         System.out.println("-------------------");
         System.out.println("ID\tTYPE\tTITLE");
@@ -49,9 +51,5 @@ public class TestClass {
             System.out.println("");
 
         }
-
-
-
-
     }
 }
