@@ -1,4 +1,4 @@
 package TestPackage;
 
-public class Class1 {
+public class LoanItem {
 }

@@ -1,4 +1,4 @@
 package TestPackage;
 
-public class Class2 {
+public class Book {
 }

@@ -1,4 +1,4 @@
 package TestPackage;
 
-public class Class3 {
+public class Video {
 }
