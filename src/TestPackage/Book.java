@@ -13,18 +13,22 @@ public class Book extends LoanItem {
         this.type = "Book";
     }
 
+    //Getter
     public String getType() {
         return type;
     }
 
+    //Setter
     public void setType(String type) {
         this.type = type;
     }
 
+    //Getter
     public String getName() {
         return name;
     }
 
+    //Setter
     public void setName(String name) {
         this.name = name;
     }
