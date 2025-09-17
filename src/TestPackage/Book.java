@@ -7,6 +7,12 @@ public class Book extends LoanItem {
         this.name = name;
     }
 
+    //Konstruktør
+    public Book(String name){
+        super(name);
+        this.type = "Book";
+    }
+
     public String getType() {
         return type;
     }
@@ -28,5 +34,4 @@ public class Book extends LoanItem {
     public String toString() {
         return "Book{" + "type=" + type + ", name=" + name + '}';
     }
-    public void
 }
