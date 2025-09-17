@@ -43,7 +43,9 @@ public class ScannerHelper {
                     }
                     numCorrect = true; // vi har et gyldigt input, så vi bryder ud af loopet.
                 }
-            }
+            }else { //hvis hasNextInt() fejler
+                System.out.println("That's not a number. Try again!");
+                sc.nextLine(); //rydder forkert input fra bufferen.
         }
         return numOfLoans; // antal lån returneres
     }
